@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🇮🇳 Indian Legal Assistant</title>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="title">🇮🇳 Indian Legal Assistant</h1>
+            <p class="description">AI-powered guidance on Indian legal matters</p>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="English">🇬🇧 English</option>
+                    <option value="Hindi">🇮🇳 हिंदी</option>
+                    <option value="Bengali">🇧🇩 বাংলা</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="chat-container">
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        class="chat-input" 
+                        placeholder="Ask about Indian legal matters..."
+                    />
+                    <button id="sendButton" class="send-button">Send</button>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>About</h3>
+                    <p>This legal assistant is used to provide information about Indian law from the Constitution, Supreme Court cases, and legal statutes.</p>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Constitutional provisions</li>
+                        <li>Criminal law (IPC, CrPC, BNS 2024)</li>
+                        <li>Supreme Court judgments</li>
+                        <li>Legal procedures</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section disclaimer">
+                    <h3>⚠️ Disclaimer</h3>
+                    <p>This provides general legal information, not legal advice. Consult a qualified legal professional for specific matters.</p>
+                </div>
+
+                <button id="clearChat" class="clear-button">Clear Chat</button>
+                
+                <div class="authors-section">
+                    <p class="authors-text">
+                        <em>Developed by Shrishti Swarnkar & Kumar Gaurav Atram</em>
+                    </p>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
