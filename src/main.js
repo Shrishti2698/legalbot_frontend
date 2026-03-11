@@ -4,7 +4,7 @@ class LegalChatbot {
     constructor() {
         this.messages = [];
         this.currentLanguage = 'English';
-        this.apiUrl = 'http://localhost:8000'; // Backend URL (to be implemented)
+        this.apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
         
         this.initializeElements();
         this.bindEvents();
